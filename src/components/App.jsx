@@ -7,6 +7,8 @@ function App() {
   function updateTime() {
     myTime(new Date().toLocaleTimeString());
   }
+  // update the time each second 1000 miliseconds
+  setInterval(updateTime, 1000);
   return (
     <div className="container">
       <h1>{currentTime}</h1>
